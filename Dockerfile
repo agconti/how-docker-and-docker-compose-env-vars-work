@@ -10,8 +10,6 @@ WORKDIR /app
 
 COPY . .
 
-RUN ls
-
 RUN ./script.sh
 
 CMD ["bash", "./script.sh"]
