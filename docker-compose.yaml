@@ -1,0 +1,11 @@
+services: 
+    test:
+        build: 
+            context: .
+            args: 
+                ENV_SPECIFED_IN_SHELL_PASSED_VIA_ARG_IN_COMPOSE: $ENV_SPECIFED_IN_SHELL_PASSED_VIA_ARG_IN_COMPOSE
+        environment:
+            ENV_FROM_DOCKER_COMPOSE: 'yes'
+        volumes: 
+            - ./:/app
+ 
